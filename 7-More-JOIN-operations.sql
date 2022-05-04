@@ -115,5 +115,5 @@ ORDER BY COUNT(actorid) DESC, title;
 SELECT DISTINCT name
 FROM actor
 JOIN casting ON id = actorid
-WHERE movieid IN (SELECT movieid FROM casting WHERE actorid IN (SELECT id FROM actor WHERE name = 'Art Garfunkel'));
+WHERE movieid IN (SELECT movieid FROM casting WHERE actorid IN (SELECT id FROM actor WHERE name = 'Art Garfunkel')) AND name != 'Art Garfunkel';
 

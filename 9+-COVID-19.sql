@@ -64,5 +64,5 @@ WHERE (a.confirmed - b.confirmed) > 1000
                                      FROM covid c 
                                      JOIN covid d ON d.name = c.name AND DATE_ADD(d.whn, INTERVAL 1 DAY) = c.whn
                                      WHERE c.name = a.name)
-ORDER BY 2;
+ORDER BY date;
                                                                             

@@ -1,6 +1,6 @@
 -- Table schema:
 
-CREATE TABLE world (name TEXT,continent TEXT,	area INTEGER, population INTEGER,	gdp INTEGER);
+CREATE TABLE world (name TEXT, continent TEXT, area INTEGER, population INTEGER, gdp INTEGER);
 
 /* 1. The example uses a WHERE clause to show the population of 'France'. 
       Note that strings (pieces of text that are data) should be in 'single quotes'
